@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation-2</title>
+    <style>
+        div
+        {
+          height: 100px;
+          width: 100px;
+          position: relative;
+          border-radius: 100%;
+          background-color: red;
+          border: 2px solid black;
+          animation-name: abc;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+          animation-delay:1s;
+          animation-direction:alternate;
+          animation-timing-function:cubic-bezier(1, 0.20, 0.58, 1.0);
+
+
+          /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+/* animation: 5s cubic-bezier(1, 0.20, 0.58, 1.0) 1s infinite normal  forwards  running abc; */
+
+        }
+       
+        @keyframes abc{
+            
+            0%{ 
+                top:0px;
+                left:0px;
+                background-color:violet;
+            }
+            25%
+            {
+                background-color: blue;
+                top:0px;
+                left:1000px;
+            }
+            50%
+            {
+                background-color:yellow;
+                top:500px;
+                left:1000px;
+            }
+            75%
+            {
+                background-color: rgb(255, 94, 0);
+                top:500px;
+                left:0px;
+            }
+            100%
+            {
+                background-color: red;
+                /* top:0px;
+                left:0px; */
+                top:0px;
+                left:1000px;
+            }
+        }
+ 
+    </style>
+</head>
+<body>
+      <div>
+
+      </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div
+        {
+           width:100px;
+           height: 100px;
+           background-color: red;
+           border-radius: 100%;
+           position: relative;
+           animation-name: example;
+           animation-duration: 4s;
+           animation-iteration-count: infinite;
+           animation-direction:normal;
+           /* animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+           animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+          
+           animation-delay: -2s;
+           
+
+           
+        }
+
+        @keyframes example {
+         0%{
+            background-color:violet;
+           top:0px;
+           left:0px;
+         }
+         25%{
+            background-color:blue;
+            top:0px;
+            left:1050px;
+         }
+         50%{
+            background-color:green;
+            top:500px;
+            left:1050px;
+         }
+         75%{
+            background-color:rgb(255, 251, 0);
+            top:500px;
+            left:0px;
+         }
+         100%{
+            background-color:red;
+            top:0px;
+            left:0px;
+         }
+        
+    }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
